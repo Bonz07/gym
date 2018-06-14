@@ -10,7 +10,7 @@ class Box(gym.Space):
     Example usage:
     self.action_space = spaces.Box(low=-10, high=10, shape=(1,))
     """
-    def __init__(self, low=None, high=None, shape=None, dtype=None):
+    def __init__(self, low=None, high=None, shape=None, dtype=np.float32):
         """
         Two kinds of valid input:
             Box(low=-1.0, high=1.0, shape=(3,4)) # low and high are scalars, and shape is provided
